@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 11</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+          class="input"
+        />
+        <button class="button" type="submit">
+          <img
+            src="./images/icon.png"
+            class="button-img"
+            alt="look-up-img"
+            width="20"
+          />
+        </button>
+      </form>
+    </header>
+    <span class="loader is-hidden"></span>
+    <div class="gallery"></div>
+    <div class="js-guard"></div>
+    <button type="button" class="load-more is-hidden">Load more</button>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
